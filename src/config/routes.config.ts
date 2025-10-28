@@ -1,6 +1,5 @@
 import type { RouteInterface } from '../types/routeInteface'
 
-import Contacts from '../components/pages/Contacts'
 import Login from '../components/auth/Login'
 import Registration from '../components/auth/Registration'
 import Articles from '../components/articles/Articles'

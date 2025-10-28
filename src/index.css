@@ -116,3 +116,155 @@ footer {
 .footer p {
   margin: 0;
 }
+
+/* ==== BUTTONS ==== */
+button {
+  background-color: #61dafb;
+  color: #121212;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 3px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(97, 218, 251, 0.2);
+}
+
+button:hover {
+  background-color: #4ac3e3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(97, 218, 251, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(97, 218, 251, 0.2);
+}
+
+button:disabled {
+  background-color: #333;
+  color: #777;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ==== BUTTON VARIANTS ==== */
+.btn-primary {
+  background-color: #61dafb;
+  color: #121212;
+}
+
+.btn-primary:hover {
+  background-color: #4ac3e3;
+}
+
+.btn-secondary {
+  background-color: #2d2d2d;
+  color: #eaeaea;
+  border: 1px solid #444;
+}
+
+.btn-secondary:hover {
+  background-color: #3a3a3a;
+  border-color: #61dafb;
+  color: #61dafb;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #61dafb;
+  border: 2px solid #61dafb;
+}
+
+.btn-outline:hover {
+  background-color: #61dafb;
+  color: #121212;
+}
+
+/* ==== BUTTON GROUP (for sorting, actions, etc.) ==== */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.button-group button {
+  flex: 1 1 auto;
+  min-width: 120px;
+}
+
+/* ==== FORMS (Login / Registration) ==== */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Labels */
+label {
+  color: #eaeaea;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 5px;
+  font-size: 1rem;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #eaeaea;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 8px rgba(97, 218, 251, 0.4);
+  background-color: #1e1e1e;
+}
+
+/* Placeholders */
+::placeholder {
+  color: #888;
+  opacity: 0.8;
+  font-style: italic;
+  transition: color 0.25s ease;
+}
+
+input:focus::placeholder {
+  color: #61dafb;
+  opacity: 0.7;
+}
+
+/* Input errors */
+.input-error {
+  border-color: #e63946;
+  box-shadow: 0 0 6px rgba(230, 57, 70, 0.5);
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  text-align: left;
+}
